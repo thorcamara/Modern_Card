@@ -109,3 +109,32 @@ p {
   object-fit: cover;
   transition: 0.2s;
 }
+
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: auto !important;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  line-height: 30px;
+  font-size: 12px;
+  opacity: 1;
+  background: #ce93d8;
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7b1fa2;
+  width: 20px;
+  border-radius: 10px;
+}
