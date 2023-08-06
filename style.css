@@ -138,3 +138,40 @@ p {
   width: 20px;
   border-radius: 10px;
 }
+
+.slider-buttons {
+  position: absolute;
+  display: flex;
+  top: 100%;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  position: relative;
+  margin-left: 4px;
+}
+
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  transition: 0.2s;
+}
+
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before {
+  width: 100%;
+}
